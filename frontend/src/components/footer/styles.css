@@ -1,0 +1,39 @@
+/*/////////////////////////////////FOOTER///////////////////////////////*/
+
+footer{
+    height: 80px;
+    width: 100%;
+    background-color: #000000a9;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .footer-left, .footer-center, .footer-right{
+    flex: 1;
+    display: flex;
+    color: #FFF;
+    
+  }
+  
+  .footer-center{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .redes-sociais{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .redes-sociais a{
+    text-decoration: none;
+    font-size: 40px;
+    color: #fff;
+  }
+  
+  
