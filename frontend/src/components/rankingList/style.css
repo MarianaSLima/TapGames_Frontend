@@ -1,5 +1,5 @@
 .ranking-area, .meu-ranking-area {
-    width: 310px;
+    width: 360px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@
     font-weight: bold;
     color: #ae0287;
     -webkit-text-stroke-width: 1.2px;
-    -webkit-text-stroke-color: #39003e;
+    -webkit-text-stroke-color: #ae0287;
   }
   
   .ranking-header img {

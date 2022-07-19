@@ -1,5 +1,4 @@
 .description-area{
-    flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +12,7 @@
     letter-spacing: 2px;
     font-weight: bold;
     color: #ae0287;
-    text-shadow: 3px 6px 8px #5e0066;
+    text-shadow: 5px 3px 6px #000000;
     -webkit-text-stroke-width: 1.1px;
     -webkit-text-stroke-color: #ae0287;
     padding: 10px;
@@ -39,19 +38,7 @@
   }
   
   .description-btn{
-    margin-top: 16px;
+    margin-top: 38px;
     margin-bottom: 16px;
   }
   
-  .description-btn a{
-    margin-top: 24px;
-    padding:  5px 10px 5px 10px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    background-color: #39003e;
-    border-radius: 10px;
-  }

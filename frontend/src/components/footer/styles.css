@@ -9,19 +9,14 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-  }
-  
-  .footer-left, .footer-center, .footer-right{
-    flex: 1;
-    display: flex;
-    color: #FFF;
-    
   }
   
   .footer-center{
+    display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 600px;
+    width: 85%;
   }
   
   .redes-sociais{
@@ -32,8 +27,12 @@ footer{
   
   .redes-sociais a{
     text-decoration: none;
-    font-size: 40px;
+    font-size: 2.3em;
     color: #fff;
   }
   
+  .footer-texto {
+    color: #fff;
+    text-align: center;
+  }
   

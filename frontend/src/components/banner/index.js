@@ -13,6 +13,7 @@ function Banner(props) {
                     <section className="banner-left">
                         <RankingList />
                     </section>
+                    <section className="banner-center"></section>
 
                     <section className="banner-right">
                         {props.openSignup ?

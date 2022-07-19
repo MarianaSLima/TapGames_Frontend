@@ -5,10 +5,6 @@ function Footer() {
     return (
 
         <footer>
-            <div className="footer-left">
-
-            </div>
-
             <div className="footer-center">
                 <div className="redes-sociais">
                     <a href="https://www.linkedin.com/in/mariana-dos-santos-lima-aa78921b9/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -19,10 +15,6 @@ function Footer() {
                 <div className="footer-texto">
                     <small>Desenvolvido por Mariana Dos Santos Lima</small>
                 </div>
-            </div>
-
-            <div className="footer-right">
-
             </div>
         </footer>
 

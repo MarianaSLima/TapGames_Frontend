@@ -11,7 +11,7 @@ function Description() {
                 <p>Treine seu reflexos nesse incrível jogo, estilo clique, coletando o maior número de itens
                     possíveis e evitando clicar nas bombas e caveiras.</p>
                 <div className="description-btn">
-                    <a href="#" target="_blank">DOWNLOAD</a>
+                    <a className="btn" target="_blank">DOWNLOAD</a>
                 </div>
             </div>
         </div>

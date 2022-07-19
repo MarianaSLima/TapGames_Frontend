@@ -1,4 +1,5 @@
 import React from "react";
+import './style.css'
 import SignIn from "../signin/index";
 
 function Header(props) {
@@ -8,10 +9,10 @@ function Header(props) {
       <nav>
         <ul>
           <li>
-            <button className="btn" onClick={() => props.onclickSignin()}>sign in</button>
+            <a className="btn" onClick={() => props.onclickSignin()}>sign in</a>
           </li>
           <li>
-            <button className="btn" onClick={() => props.onclickSignup()}>sign up</button>
+            <a className="btn" onClick={() => props.onclickSignup()}>sign up</a>
           </li>
           <div>
             {props.openSignin &&
