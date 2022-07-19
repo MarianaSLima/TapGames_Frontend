@@ -8,6 +8,8 @@
         align-items: center;
         gap: 30px;
         margin-bottom: 20px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .banner-right {
@@ -21,10 +23,12 @@
     .description-titulo {
         font-size: 38px;
     }
+
     .ranking-header {
         font-size: 38px;
         height: 60px;
     }
+
     .description-content p {
         font-size: 18px;
     }
@@ -48,10 +52,12 @@
     .description-titulo {
         font-size: 32px;
     }
+
     .ranking-header {
         font-size: 32px;
         height: 60px;
     }
+
     .description-content p {
         font-size: 16px;
     }
@@ -80,10 +86,12 @@
     .description-titulo {
         font-size: 28px;
     }
+
     .ranking-header {
         font-size: 28px;
         height: 50px;
     }
+
     .description-content p {
         font-size: 14px;
     }
@@ -96,7 +104,10 @@
         font-size: 18px;
     }
 
-    .description-content, .signup-area, .dropdown-content, .ranking-area{
+    .description-content,
+    .signup-area,
+    .dropdown-content,
+    .ranking-area {
         max-width: 330px;
     }
 
