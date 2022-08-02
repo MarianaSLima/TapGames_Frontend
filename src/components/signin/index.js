@@ -3,6 +3,7 @@ import './styles.css';
 
 function SignIn() {
     return (
+        <div className="dropdown-background">
             <div class="dropdown-content" id="loginDropdown">
                 <div className="login-area">
                     <div className="form-area">
@@ -32,6 +33,7 @@ function SignIn() {
                     </div>
                 </div>
             </div>
+        </div>
     );
 }
 

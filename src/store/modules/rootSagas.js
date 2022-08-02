@@ -1,9 +1,10 @@
-import { all } from 'redux-saga/effects';
+import {all} from 'redux-saga/effects';
 
-import usuario from './usuario/reducers';
-//quais modulos vou controlar
-export default function* rootSaga() {
+import usuario from './usuario/sagas';
+//quais moduklos vou controlar 
+
+export default function* rootSagas(){
     return yield all([
-        usuario,
+        usuario
     ]);
 }
