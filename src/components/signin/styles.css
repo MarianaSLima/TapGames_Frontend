@@ -1,4 +1,7 @@
 .dropdown-content{
+  position: absolute;
+  top: 90px;
+  right: 0;
   display: flex;
   min-width: 280px;
   max-width: 360px;
