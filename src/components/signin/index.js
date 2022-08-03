@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import './styles.css';
 import { useDispatch } from "react-redux";
 
 function SignIn() {
     const dispatch = useDispatch();
+    const [credentials, setCredentials] = useState({
+        email: '',
+        password: ''
+    });
     
     return (
             <div class="dropdown-content" id="loginDropdown">
