@@ -1,9 +1,11 @@
 import React from "react";
 import './styles.css';
+import { useDispatch } from "react-redux";
 
 function SignIn() {
+    const dispatch = useDispatch();
+    
     return (
-        <div className="dropdown-background">
             <div class="dropdown-content" id="loginDropdown">
                 <div className="login-area">
                     <div className="form-area">
@@ -33,7 +35,6 @@ function SignIn() {
                     </div>
                 </div>
             </div>
-        </div>
     );
 }
 

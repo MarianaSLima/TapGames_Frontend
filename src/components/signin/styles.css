@@ -1,12 +1,14 @@
 .dropdown-content{
   display: flex;
-  min-width: 280px;
-  max-width: 360px;
+  min-width: 380px;
   box-shadow: 0px 3px 8px 3px #ffffff09;
   border-radius: 8px;
   height: 300px;
   padding: 16px;
   background-color: #000000;
+  top: 90px;
+  right: 0;
+  position: absolute;
 }
 
 .login-area{
