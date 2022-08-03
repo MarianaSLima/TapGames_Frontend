@@ -22,6 +22,7 @@ function Signup(props) {
         e.preventDefault();
         console.log('aqui'+credentials);
         dispatch(registerStart(credentials));
+        props.onClickCancel();
     }
 
 

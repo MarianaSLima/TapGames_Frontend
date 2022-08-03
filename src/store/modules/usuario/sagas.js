@@ -9,24 +9,24 @@ function getGravatarURL(email){
     return `http://www.gravatar.com/avatar/${hash}`;
 }
 
-async function logIn(email, password) {
+async function logIn(email, passwordHash) {
     const data = JSON.stringify({
         email,
-        password
+        passwordHash
     });
     const response = await Api.post('/signin', data);
     return response.data.data;
 }
 
 //implementar essse
-async function signUp(nome, nick, email, password){
+async function signUp(nome, nick, email, passwordHash){
     console.log(email)
     const data = JSON.stringify({
         "avatar": getGravatarURL(email),
         nome,
         nick,
         email,
-        password,
+        passwordHash,
         "score":0,
         "ranking":0
     });
@@ -34,7 +34,7 @@ async function signUp(nome, nick, email, password){
     await Api.post('/user/add', data);
 }
 
-function* logWithCredentials({credentials}){
+function* logInWithCredentials({credentials}){
     try{
         const user = yield logIn(credentials.email, credentials.password);
         yield put(loginSuccess(user));
@@ -57,6 +57,6 @@ function* registerWithCredentials({credentials}){
 //fala qual função vai disparar quando a ação for executada
 
 export default all([
-    takeLatest("@usuario/LOGIN_START", logWithCredentials),
+    takeLatest("@usuario/LOGIN_START", logInWithCredentials),
     takeLatest("@usuario/REGISTER_START", registerWithCredentials),
 ]);
