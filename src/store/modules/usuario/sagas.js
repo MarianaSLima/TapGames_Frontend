@@ -14,8 +14,9 @@ async function logIn(email, passwordHash) {
         email,
         passwordHash
     });
-    const response = await Api.post('/signin', data);
+    const response = await Api.post('/user/signin', data);
     return response.data.data;
+    
 }
 
 //implementar essse
@@ -31,7 +32,7 @@ async function signUp(nome, nick, email, passwordHash){
         "ranking":0
     });
     console.log(nome);
-    await Api.post('/user/add', data);
+    await Api.post('/user/signup', data);
 }
 
 function* logInWithCredentials({credentials}){
