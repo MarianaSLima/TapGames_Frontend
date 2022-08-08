@@ -7,12 +7,12 @@ export const loginStart = (credentials) => ({
 
 //objeto usuario
 
-export const loginSuccess =(user) =>({
+export const loginSuccess = (user) =>({
     type: '@usuario/LOGIN_SUCCESS',
     user,
 });
 
-export const loginFailure =(error) => ({
+export const loginFailure = (error) => ({
     type: '@usuario/LOGIN_FAILURE',
     error,
 });

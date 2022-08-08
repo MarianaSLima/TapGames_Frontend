@@ -3,17 +3,15 @@ import Footer from '../../components/footer/index';
 import './style.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { logOut } from '../../store/modules/usuario/actions';
-import { useNavigate } from "react-router-dom";
 
 
 function Header(props) {
-    const navigate = useNavigate();
     const dispatch = useDispatch();
     const user = useSelector(({ usuario }) => usuario.currentUser);
 
     return (
         <>
-            <div className="header">
+            <header>
                 <nav>
                     <div className="user-area">
                         <div className="user-nick">{user.nick}</div>
@@ -22,17 +20,17 @@ function Header(props) {
                     <ul>
                         <li>
                             <a onClick={() => props.onClickPerfil()}>
-                                <img src={`${user.avatar}`} alt="" />
+                                <img className="foto-user" src={`${user.avatar}`} alt="" />
                             </a>
                         </li>
                         <li>
-                            <a onClick={() => {dispatch(logOut()); navigate('/');}}>
+                            <a className="btn" onClick={() => dispatch(logOut())}>
                                 <i className="fa fa-sign-out"></i>
                             </a>
                         </li>
                     </ul>
                 </nav>
-            </div>
+            </header>
         </>
     );
 }

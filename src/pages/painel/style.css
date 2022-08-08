@@ -1,0 +1,17 @@
+.user-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px;
+}
+
+.foto-user{
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 50%;
+}
+
+.user-area div{
+    color: white;  
+}

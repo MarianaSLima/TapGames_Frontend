@@ -8,7 +8,7 @@ const initialState = {
 //recebe a ação e carrega o currentUser
 function usuario(state=initialState, action) {
     switch(action.type) {
-        case '@usuario/LOGIN_SUCESS':
+        case '@usuario/LOGIN_SUCCESS':
             return{
                 ...state,
                 currentUser: action.user,

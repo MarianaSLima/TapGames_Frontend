@@ -20,12 +20,16 @@ header {
 
 nav {
     display: flex;
+    height: 100%;
     align-self: center;
     align-items: center;
 }
 
 nav ul {
     display: flex;
+    height: 100%;
+    align-self: center;
+    align-items: center;
     list-style: none;
 }
 
