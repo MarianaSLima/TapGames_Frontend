@@ -128,4 +128,8 @@
         max-width: 330px;
     }
 
+    footer, header{
+        position: relative;
+    }
+
 }
