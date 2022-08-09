@@ -12,6 +12,14 @@
     border-radius: 50%;
 }
 
-.user-area div{
-    color: white;  
+.banner-painel{
+    width: 100%;
+    display: flex;
+    padding-top: 80px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.banner-painel .banner-left{
+    margin-top: 80px;
 }

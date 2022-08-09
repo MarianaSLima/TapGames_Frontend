@@ -20,6 +20,23 @@
         order: 1;
     }
 
+    .banner-painel {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .banner-painel-right {
+        order: 0;
+    }
+
+    .banner-painel-left {
+        order: 1;
+    }
+
     .description-titulo {
         font-size: 38px;
     }

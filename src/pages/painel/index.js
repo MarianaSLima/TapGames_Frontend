@@ -3,7 +3,9 @@ import Footer from '../../components/footer/index';
 import './style.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { logOut } from '../../store/modules/usuario/actions';
-
+import RankingList from '../../components/rankingList/index';
+import Signup from '../../components/signup/index';
+import MeuRanking from "../../components/meuRanking/meuRanking";
 
 function Header(props) {
     const dispatch = useDispatch();
@@ -14,8 +16,8 @@ function Header(props) {
             <header>
                 <nav>
                     <div className="user-area">
-                        <div className="user-nick">{user.nick}</div>
-                        <div className="user-ranking">{`#${user.ranking}`}</div>
+                        <div className="user-nick text">{user.nick}</div>
+                        <div className="user-ranking text">{`#${user.ranking}`}</div>
                     </div>
                     <ul>
                         <li>
@@ -38,13 +40,17 @@ function Header(props) {
 function Banner(props) {
     return(
         <>
-            <div className="banner">
-                <div className="banner-left">
-
+            <div className="banner-painel painel">
+                <div className="banner-painel-left">
+                    <RankingList />
                 </div>
 
-                <div className="banner-right">
-
+                <div className="banner-painel-right">
+                    {props.openPerfil === true ?
+                        <Signup onClickCancel={props.onClickCancel}/>
+                        :
+                        <MeuRanking />
+                    }
                 </div> 
             </div>
         </>

@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './styles.css';
-import {useDispatch} from 'react-redux';
-import { registerStart } from "../../store/modules/usuario/actions";
+import {useDispatch, useSelector} from 'react-redux';
+import { registerStart, updateStart } from "../../store/modules/usuario/actions";
 
 
 function Signup(props) {
+    
+    const user = useSelector(({usuario}) => usuario.currentUser);
     const dispatch = useDispatch();
 
     const [credentials, setCredentials] = useState ({
@@ -20,11 +22,26 @@ function Signup(props) {
 
     function handleSubmit(e){
         e.preventDefault();
-        console.log('aqui'+credentials);
-        dispatch(registerStart(credentials));
+        if(!user) {
+            dispatch(registerStart(credentials));
+        } else{
+            dispatch(updateStart(credentials));
+        }
         props.onClickCancel();
     }
 
+    useEffect(() => {
+        if(user) {
+            let newCredencial = {
+                id: user._id,
+                nome: user.nome,
+                nick: user.nick,
+                email: user.email
+            }
+            
+            setCredentials(newCredencial);
+        }
+    },[])
 
     return (
         <div className="signup-area">

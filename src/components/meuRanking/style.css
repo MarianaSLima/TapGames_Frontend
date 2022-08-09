@@ -1,0 +1,54 @@
+.text{
+    color: #fff;
+}
+
+.banner-painel-right .ranking-list{
+    margin-top: 70px;
+}
+
+.user-ranking{
+    color: salmon;
+}
+
+.meuranking-header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.meuranking-img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.meuranking-header-content{
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+}
+
+.header-content-nick{
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    color: #ae0287;
+}
+
+.banner-painel-left{
+    flex: 1;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .banner-painel-right{
+    flex: 1;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  

@@ -19,6 +19,17 @@ function usuario(state=initialState, action) {
                 ...state,
                 error: action.error,
             };
+            case '@usuario/UPDATE_SUCCESS':
+            return{
+                ...state,
+                currentUser: action.user,
+                error: null,
+            };
+        case '@usuario/UPDATE_FAILURE':
+            return {
+                ...state,
+                error: action.error,
+            };
         case '@usuario/LOG_OUT':
             return initialState;
 

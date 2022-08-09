@@ -23,7 +23,7 @@ export const registerStart = (credentials)=> ({
     credentials,
 });
 
-export const registerSuccss = (user)=> ({
+export const registerSuccess = (user)=> ({
     type: '@usuario/REGISTER_SUCCESS',
     user,
 });
@@ -35,4 +35,19 @@ export const registerFailure = (error)=> ({
 
 export const logOut = () =>({
     type: '@usuario/LOG_OUT',
+});
+
+export const updateStart = (credentials)=> ({
+    type: '@usuario/UPDATE_START',
+    credentials,
+});
+
+export const updateSuccess = (user)=> ({
+    type: '@usuario/UPDATE_SUCCESS',
+    user,
+});
+
+export const updateFailure = (error)=> ({
+    type: '@usuario/UPDATE_FAILURE',
+    error,
 });
