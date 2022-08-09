@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const Api = axios.create({
-    baseURL: 'http://localhost:3001',
+    baseURL: 'https://tapgames.herokuapp.com',
     headers: {
         'Content-Type':'application/json'
     }
